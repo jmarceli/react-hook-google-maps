@@ -1,0 +1,8 @@
+{
+  "short_name": "react-use-google-maps",
+  "name": "react-use-google-maps",
+  "start_url": "./index.html",
+  "display": "standalone",
+  "theme_color": "#000000",
+  "background_color": "#ffffff"
+}
