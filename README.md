@@ -21,33 +21,27 @@ import * as React from "react";
 
 import { useGoogleMaps } from "react-hook-google-maps";
 
-class Example extends React.Component {
-  render() {
-    const { ref, map, google } = useGoogleMaps(
-      // Use your own API key, you can get one from Google (https://console.cloud.google.com/google/maps-apis/overview)
-      "AIzaSyC4Z5Qz97EWcoCczNn2IcYvaYG0L9pe6Rk",
-      // NOTE: even if you change options later
-      {
-        center: { lat: 0, lng: 0 },
-        zoom: 3
-      }
-    );
-    console.log(map); // instance of created Map object (https://developers.google.com/maps/documentation/javascript/reference/map)
-    console.log(google); // google API object (easily get google.maps.LatLng or google.maps.Marker or any other Google Maps class)
-    <div ref={ref} style={{ width: 400, height: 300 }} />;
-  }
-}
+const App = () => {
+  const { ref, map, google } = useGoogleMaps(
+    // Use your own API key, you can get one from Google (https://console.cloud.google.com/google/maps-apis/overview)
+    "AIzaSyC4Z5Qz97EWcoCczNn2IcYvaYG0L9pe6Rk",
+    // NOTE: even if you change options later
+    {
+      center: { lat: 0, lng: 0 },
+      zoom: 3
+    }
+  );
+  console.log(map); // instance of created Map object (https://developers.google.com/maps/documentation/javascript/reference/map)
+  console.log(google); // google API object (easily get google.maps.LatLng or google.maps.Marker or any other Google Maps class)
+  return <div ref={ref} style={{ width: 400, height: 300 }} />;
+};
+
+export default App;
 ```
 
 ## Example
 
-<iframe
-     src="https://codesandbox.io/embed/priceless-shaw-o6e7x?fontsize=14&hidenavigation=1&theme=dark"
-     style="width:100%; height:500px; border:0; border-radius: 4px; overflow:hidden;"
-     title="priceless-shaw-o6e7x"
-     allow="geolocation; microphone; camera; midi; vr; accelerometer; gyroscope; payment; ambient-light-sensor; encrypted-media; usb"
-     sandbox="allow-modals allow-forms allow-popups allow-scripts allow-same-origin"
-  ></iframe>
+[![Edit priceless-shaw-o6e7x](https://codesandbox.io/static/img/play-codesandbox.svg)](https://codesandbox.io/s/priceless-shaw-o6e7x?fontsize=14&hidenavigation=1&theme=dark)
 
 ## License
 
