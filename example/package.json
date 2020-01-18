@@ -1,20 +1,39 @@
 {
-  "name": "react-use-google-maps-example",
-  "homepage": "https://jmarceli.github.io/react-use-google-maps",
-  "version": "0.0.0",
+  "name": "react-hook-google-maps-example",
+  "homepage": "https://jmarceli.github.io/react-hook-google-maps",
+  "version": "0.1.0",
   "license": "MIT",
   "private": true,
   "dependencies": {
-    "prop-types": "^15.6.2",
-    "react": "^16.4.1",
-    "react-dom": "^16.4.1",
-    "react-scripts": "^1.1.4",
-    "react-use-google-maps": "file:.."
+    "@types/jest": "^24.9.0",
+    "@types/node": "^12.12.25",
+    "@types/react": "^16.9.17",
+    "@types/react-dom": "^16.9.4",
+    "react": "file:../node_modules/react",
+    "react-dom": "^16.12.0",
+    "react-scripts": "3.3.0",
+    "react-hook-google-maps": "file:..",
+    "typescript": "^3.7.5"
   },
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
-    "test": "react-scripts test --env=jsdom",
+    "test": "react-scripts test",
     "eject": "react-scripts eject"
+  },
+  "eslintConfig": {
+    "extends": "react-app"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
   }
 }

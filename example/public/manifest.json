@@ -1,6 +1,6 @@
 {
-  "short_name": "react-use-google-maps",
-  "name": "react-use-google-maps",
+  "short_name": "react-hook-google-maps",
+  "name": "react-hook-google-maps",
   "start_url": "./index.html",
   "display": "standalone",
   "theme_color": "#000000",
