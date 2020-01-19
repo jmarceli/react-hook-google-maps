@@ -2,11 +2,11 @@
 
 > React useGoogleMaps hook
 
-[![license](https://img.shields.io/github/license/react-hook-google-maps/react-hook-google-maps.svg)](https://opensource.org/licenses/MIT)
+[![license](https://img.shields.io/github/license/jmarceli/react-hook-google-maps.svg)](https://opensource.org/licenses/MIT)
 [![version](https://img.shields.io/npm/v/react-hook-google-maps.svg)](https://www.npmjs.com/package/react-hook-google-maps)
-[![dependencies status](https://img.shields.io/david/react-hook-google-maps/react-hook-google-maps.svg)](https://david-dm.org/react-hook-google-maps/react-hook-google-maps)
-[![CI build](https://img.shields.io/circleci/project/github/react-hook-google-maps/react-hook-google-maps/master.svg)](https://circleci.com/gh/react-hook-google-maps/react-hook-google-maps)
-[![code coverage](https://img.shields.io/codecov/c/github/react-hook-google-maps/react-hook-google-maps.svg)](https://codecov.io/gh/react-hook-google-maps/react-hook-google-maps)
+[![dependencies status](https://img.shields.io/david/jmarceli/react-hook-google-maps.svg)](https://david-dm.org/jmarceli/react-hook-google-maps)
+[![CI build](https://img.shields.io/circleci/project/github/jmarceli/react-hook-google-maps/master.svg)](https://circleci.com/gh/jmarceli/react-hook-google-maps)
+[![code coverage](https://img.shields.io/codecov/c/github/jmarceli/react-hook-google-maps.svg)](https://codecov.io/gh/jmarceli/react-hook-google-maps)
 
 Easiest way to use Google Maps in your React application.
 
