@@ -36,7 +36,7 @@ export function useGoogleMapsApi(apiKey: string) {
       script.remove();
       initialized.splice(
         initialized.findIndex(el => el.src === src),
-        1
+        1,
       );
     };
   }, [apiKey]);

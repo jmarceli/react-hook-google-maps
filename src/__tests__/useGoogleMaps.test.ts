@@ -4,8 +4,8 @@ import { useGoogleMaps } from "..";
 const mapObject = { map: "object" };
 const googleMock = {
   maps: {
-    Map: jest.fn().mockImplementation(() => mapObject)
-  }
+    Map: jest.fn().mockImplementation(() => mapObject),
+  },
 };
 const windowMock = { ...window, google: googleMock };
 const loadEvent = new Event("load");
@@ -18,7 +18,7 @@ describe("useMap hook", () => {
 
     // when
     const { result } = renderHook(() =>
-      useGoogleMaps("GOOGLE_MAPS_API_KEY", mapOptions)
+      useGoogleMaps("GOOGLE_MAPS_API_KEY", mapOptions),
     );
     act(() => {
       windowSpy.mockImplementation(() => windowMock);
@@ -27,7 +27,7 @@ describe("useMap hook", () => {
 
     // then
     expect(document.querySelectorAll("script")[0].getAttribute("src")).toBe(
-      "https://maps.googleapis.com/maps/api/js?key=GOOGLE_MAPS_API_KEY"
+      "https://maps.googleapis.com/maps/api/js?key=GOOGLE_MAPS_API_KEY",
     );
     expect(result.current.google).toBe(googleMock);
     expect(result.current.map).toBe(mapObject);

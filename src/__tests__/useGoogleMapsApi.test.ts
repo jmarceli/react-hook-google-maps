@@ -12,7 +12,7 @@ describe("useGoogleMapsApi hook", () => {
 
     // when
     const { result } = renderHook(() =>
-      useGoogleMapsApi("GOOGLE_MAPS_API_KEY")
+      useGoogleMapsApi("GOOGLE_MAPS_API_KEY"),
     );
     act(() => {
       windowSpy.mockImplementation(() => windowMock);
@@ -21,7 +21,7 @@ describe("useGoogleMapsApi hook", () => {
 
     // then
     expect(document.querySelectorAll("script")[0].getAttribute("src")).toBe(
-      "https://maps.googleapis.com/maps/api/js?key=GOOGLE_MAPS_API_KEY"
+      "https://maps.googleapis.com/maps/api/js?key=GOOGLE_MAPS_API_KEY",
     );
     expect(result.current).toBe(googleMock);
 
@@ -35,7 +35,7 @@ describe("useGoogleMapsApi hook", () => {
 
     // when
     const { result, rerender } = renderHook(() =>
-      useGoogleMapsApi("GOOGLE_MAPS_API_KEY")
+      useGoogleMapsApi("GOOGLE_MAPS_API_KEY"),
     );
     act(() => {
       windowSpy.mockImplementation(() => windowMock);

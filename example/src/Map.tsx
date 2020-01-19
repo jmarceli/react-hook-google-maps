@@ -7,8 +7,8 @@ export const Map = React.memo(function Map() {
     "AIzaSyC4Z5Qz97EWcoCczNn2IcYvaYG0L9pe6Rk",
     {
       center: { lat: 0, lng: 0 },
-      zoom: 3
-    }
+      zoom: 3,
+    },
   );
   console.log("render Map");
 

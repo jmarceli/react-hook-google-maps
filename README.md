@@ -2,7 +2,11 @@
 
 > React useGoogleMaps hook
 
-[![NPM](https://img.shields.io/npm/v/react-hook-google-maps.svg)](https://www.npmjs.com/package/react-hook-google-maps)
+[![license](https://img.shields.io/github/license/react-hook-google-maps/react-hook-google-maps.svg)](https://opensource.org/licenses/MIT)
+[![version](https://img.shields.io/npm/v/react-hook-google-maps.svg)](https://www.npmjs.com/package/react-hook-google-maps)
+[![dependencies status](https://img.shields.io/david/react-hook-google-maps/react-hook-google-maps.svg)](https://david-dm.org/react-hook-google-maps/react-hook-google-maps)
+[![CI build](https://img.shields.io/circleci/project/github/react-hook-google-maps/react-hook-google-maps/master.svg)](https://circleci.com/gh/react-hook-google-maps/react-hook-google-maps)
+[![code coverage](https://img.shields.io/codecov/c/github/react-hook-google-maps/react-hook-google-maps.svg)](https://codecov.io/gh/react-hook-google-maps/react-hook-google-maps)
 
 Easiest way to use Google Maps in your React application.
 
@@ -28,8 +32,8 @@ const App = () => {
     // NOTE: even if you change options later
     {
       center: { lat: 0, lng: 0 },
-      zoom: 3
-    }
+      zoom: 3,
+    },
   );
   console.log(map); // instance of created Map object (https://developers.google.com/maps/documentation/javascript/reference/map)
   console.log(google); // google API object (easily get google.maps.LatLng or google.maps.Marker or any other Google Maps class)
@@ -45,8 +49,8 @@ export default App;
 
 ## License
 
-MIT
+[MIT](./LICENSE)
 
 ## Author
 
-Jan Grzegorowski [jmarceli](https://github.com/jmarceli)
+Jan Grzegorowski

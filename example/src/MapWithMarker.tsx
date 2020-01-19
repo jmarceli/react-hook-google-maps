@@ -9,8 +9,8 @@ export const MapWithMarker = React.memo(function Map() {
     "AIzaSyC4Z5Qz97EWcoCczNn2IcYvaYG0L9pe6Rk",
     {
       zoom: 4,
-      center: uluru
-    }
+      center: uluru,
+    },
   );
   console.log("render MapWithMarkers");
 

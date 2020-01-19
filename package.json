@@ -2,12 +2,24 @@
   "name": "react-hook-google-maps",
   "version": "0.0.2",
   "description": "React useGoogleMaps hook",
-  "author": "Jan Grzegorowski",
+  "author": "Jan Grzegorowski (https://www.grzegorowski.com)",
   "license": "MIT",
-  "repository": "jmarceli/react-hook-google-maps",
+  "private": false,
+  "repository": "https://github.com/jmarceli/react-hook-google-maps",
   "main": "dist/index.js",
   "module": "dist/index.es.js",
   "jsnext:main": "dist/index.es.js",
+  "keywords": [
+    "react",
+    "google-maps",
+    "hook",
+    "useGoogleMaps",
+    "google-maps-api"
+  ],
+  "homepage": "https://github.com/jmarceli/react-hook-google-maps",
+  "bugs": {
+    "url": "https://github.com/jmarceli/react-hook-google-maps/issues"
+  },
   "engines": {
     "node": ">=8",
     "npm": ">=5"
@@ -36,6 +48,7 @@
     "@types/react-dom": "^16.9.4",
     "cross-env": "^6.0.3",
     "gh-pages": "^2.2.0",
+    "prettier": "^1.19.1",
     "react": "^16.12.0",
     "react-dom": "^16.12.0",
     "react-scripts": "3.3.0",
