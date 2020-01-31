@@ -22,3 +22,7 @@ yarn-error.log*
 
 # coverage report
 coverage
+
+# cypress
+cypress/examples
+cypress/videos
