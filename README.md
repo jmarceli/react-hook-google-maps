@@ -43,9 +43,15 @@ const App = () => {
 export default App;
 ```
 
-## Example
+## Examples
+
+Simple:
 
 [![Edit priceless-shaw-o6e7x](https://codesandbox.io/static/img/play-codesandbox.svg)](https://codesandbox.io/s/priceless-shaw-o6e7x?fontsize=14&hidenavigation=1&theme=dark)
+
+More complex (created from `example` dir in this repo) with external Zoom buttons and Google Maps Marker:
+
+[![Edit funny-wood-twb4t](https://codesandbox.io/static/img/play-codesandbox.svg)](https://codesandbox.io/s/funny-wood-twb4t?fontsize=14&hidenavigation=1&theme=dark)
 
 ## License
 
