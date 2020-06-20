@@ -1,7 +1,26 @@
 version: 2.1
 
 jobs:
-  run_tests:
+  run_e2e_tests:
+    docker:
+      - image: cypress/browsers:node10.16.0-chrome77
+        environment:
+          TERM: xterm
+    steps:
+      - checkout
+      - run:
+          command: npm install && npm run prepare
+      - run:
+          command: cd example && npm install
+      - run:
+          command: cd example && npm start
+          background: true
+      - run:
+          command: npx wait-on -d 60000 http://localhost:3000
+      - run:
+          command: npm run ci:cypress
+
+  run_integration_and_unit_tests:
     docker:
       - image: circleci/node:10.18.1
         environment:
@@ -16,4 +35,5 @@ jobs:
 workflows:
   tests:
     jobs:
-      - run_tests
+      - run_integration_and_unit_tests
+      - run_e2e_tests
